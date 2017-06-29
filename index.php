@@ -6,16 +6,16 @@ if(!$conexion){
     die('error de conexion');
 } else {
     $consulta = "select * from vw_users;";
-    $resultado = mysql_query($conexion, $consulta);
-    if(!$resultado) {
-        echo 'error al ejecutar consulta'
-        } else if($resultado->num_rows > 0) {
+    $resultado = mysqli_query($conexion, $consulta);
+    if(!$resultado) 
+    {
+        echo 'error al ejecutar consulta';
+        } elseif($resultado->num_rows > 0) {
             while ($usuario = $resultado->fetch_assoc()) {
                 array_push($usuarios, $usuario);
             }
     }else{
         echo 'resultado sin registros de la consulta'
-    }
 }
 ?>
 <!DOCTYPE html>
