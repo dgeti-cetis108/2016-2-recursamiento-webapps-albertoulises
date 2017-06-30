@@ -15,7 +15,8 @@ if(!$conexion){
                 array_push($usuarios, $usuario);
             }
     }else{
-        echo 'resultado sin registros de la consulta'
+        echo 'resultado sin registros de la consulta';
+    }
 }
 ?>
 <!DOCTYPE html>
