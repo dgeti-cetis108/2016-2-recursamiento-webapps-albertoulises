@@ -2,19 +2,24 @@
 $conexion = mysqli_connect('127.0.0.1','root','albertopro','recursamiento','3306');
 $usuarios = array();
 
-if(!$conexion){
+if (!$conexion)
+{
     die('error de conexion');
-} else {
+} else
+{
     $consulta = "select * from vw_users;";
     $resultado = mysqli_query($conexion, $consulta);
-    if(!$resultado) 
+    if (!$resultado) 
     {
         echo 'error al ejecutar consulta';
-        } elseif($resultado->num_rows > 0) {
-            while ($usuario = $resultado->fetch_assoc()) {
-                array_push($usuarios, $usuario);
-            }
-    }else{
+    } elseif ($resultado->num_rows > 0)
+    {
+        while ($usuario = $resultado->fetch_assoc())
+        {
+            array_push($usuarios, $usuario);
+        }
+    } else
+    {
         echo 'resultado sin registros de la consulta';
     }
 }
@@ -41,8 +46,8 @@ if(!$conexion){
             </tr>      
         </thead>
         <tbody>
-           <?php if(count($usuarios) > 0) { ?>
-            <?php foreach($usuarios as $campo => $valor) { ?>
+           <?php if (count($usuarios) > 0) { ?>
+            <?php foreach ($usuarios as $campo) { ?>
             <tr>
                 <td><?php echo $campo['firstname']; ?> </td>
                 <td><?php echo $campo['lastname']; ?></td>
