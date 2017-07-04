@@ -9,3 +9,29 @@ body h1, h2, h3{
 /* tipo .clase */
 
 /* tipo #id */
+#encabezado {
+    width: 980px;
+    margin: 20px auto 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#encabezado>div>img{
+    width: 200px;
+    height: 100px;
+}
+#encabezado h1 {
+    font-size: 1.2em;
+}
+#encabezado h2 {
+    font-size: 1em;
+}
+#encabezado h3 {
+    font-size: 0.7em;
+}
+#encabezado h4 {
+    font-size: 0.5em;
+}
+#encabezado>div:first-child {
+    display: flex;
+}
+
