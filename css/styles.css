@@ -1,6 +1,6 @@
 /* reglas CSS */
 /* tipo etiquetas*/
-body h1, h2, h3{
+body h1, h2, h3 h4 {
     margin: 0;
     border: 0;
     padding: 0;
@@ -33,5 +33,36 @@ body h1, h2, h3{
 }
 #encabezado>div:first-child {
     display: flex;
+}
+#menu a {
+    text-decoration: none;
+    color: black;
+    font-variant: small-caps;
+     padding: 10px;
+}
+#menu li{
+    list-style-type: none;
+    display: inline-flex;
+}
+#menu ul{
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+#menu{
+    height: 50px;
+    background-image: url('../imagenes/fondo_menu.png');
+    background-repeat:no-repeat;
+    background-position-x: center;
+}
+.container{
+    width: 980px;
+    margin: auto;
+}
+#nota-principal{
+    padding: 8px;
+    box-shadow: 0 0 10px grey;
+    margin-top: 10px;
 }
 
