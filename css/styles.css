@@ -1,6 +1,6 @@
 /* reglas CSS */
 /* tipo etiquetas*/
-body h1, h2, h3 h4 {
+body h1, h2, h3, h4, figure {
     margin: 0;
     border: 0;
     padding: 0;
@@ -63,6 +63,12 @@ body h1, h2, h3 h4 {
 #nota-principal{
     padding: 8px;
     box-shadow: 0 0 10px grey;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
 }
+.cajaflex{
+    display: flex;
+}
+.cajaflex.around{ justify-content: space-around;}
+.cajaflex.between{ justify-content: space-between;}
 
