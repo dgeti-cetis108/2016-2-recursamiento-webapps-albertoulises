@@ -72,3 +72,88 @@ body h1, h2, h3, h4, figure {
 .cajaflex.around{ justify-content: space-around;}
 .cajaflex.between{ justify-content: space-between;}
 
+.titulo-nota {
+    font-variant: small-caps;
+    font-size: 1.8em;
+}
+.titulo-nota>a {
+    color: #b92025;
+    text-decoration: none;
+}
+.titulo-nota>a:hover {
+    text-decoration: underline;
+}
+.intro-nota { 
+    text-align: justify;
+    margin-top: 8px;
+ }
+
+.leer-nota {
+    display: inline-block;
+    width: 118px;
+    height: 30px;
+    background-image: url('../imagenes/boton_rojo.png');
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    padding-top: 5px;
+}
+.contenido-nota {
+    width: 62%;
+}
+.sombra-imagen {
+    box-shadow: 0 0 5px grey;
+}
+.imagen-nota {
+    position: relative;
+}
+
+.imagen-nota>figcaption {
+   width: 66px;
+   height: 31px;
+   background-image: url('../imagenes/cinta.png');
+   padding-left: 15px;
+   padding-top: 6px;
+   position: absolute;
+   top: 11px;
+   left: -11px;
+}
+#notas>article {
+    background-image: url('../imagenes/sombra_notas_abajo.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+#banners {
+    border-left: 1px solid grey;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+#banners>a {
+    display: block;
+    margin-bottom: 10px;
+}
+#programas {
+    margin: 20px 0;
+}
+#enlaces>.bloque>h3 {
+    font-variant: small-caps;
+    color:#b92025;
+    font-style: 1.5em;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+#enlaces>.bloque>a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+#enlaces>.bloque>a:hover { color: #b92025;}
+
+#enlaces>.bloque {
+    padding: 0 15px;
+    line-height: 1.8em;
+}
+#enlaces { margin-bottom: 40px;}
