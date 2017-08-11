@@ -157,3 +157,27 @@ body h1, h2, h3, h4, figure {
     line-height: 1.8em;
 }
 #enlaces { margin-bottom: 40px;}
+#foter-image{
+    background-image: url('../imagenes/sems_footer');
+     background-repeat: no-repeat;
+    display: block;
+    height: 60px;
+    width: 215px;
+}
+#parrafo{
+    text-align: center;
+}
+.container #foter-image::before, .container #foter-image::after{
+    background-image: url('../imagenes/notas/linea_doble') repeat-x;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 370px;
+    bottom: 28px;
+
+}
+::before, ::after{
+    box-sizing: border-box;
+
+}
